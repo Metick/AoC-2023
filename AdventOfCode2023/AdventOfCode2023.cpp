@@ -2,10 +2,11 @@
 //
 
 #include <iostream>
-#include "Day1.h"
+#include "Day1/Day1.h"
+#include "Day2/Day2.h"
 
 int main()
 {
-	Day_1();
+	Day_2();
 	std::cout << "Hello World!\n";
 }

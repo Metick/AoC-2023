@@ -18,18 +18,18 @@
     <ClCompile Include="AdventOfCode2023.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Day1.cpp">
+    <ClCompile Include="Day1\Day1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Utils.cpp">
+    <ClCompile Include="Day2\Day2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Day1.h">
+    <ClInclude Include="Day1\Day1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Utils.h">
+    <ClInclude Include="Day2\Day2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

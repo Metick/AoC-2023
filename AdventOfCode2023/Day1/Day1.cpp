@@ -42,7 +42,7 @@ Word find_word(const std::string line, bool backwards = false)
 
 void Day_1()
 {
-	std::ifstream file("Day1.txt");
+	std::ifstream file("Input/Day1/Day1.txt");
 	if (file.is_open())
 	{
 		std::uint64_t total_sum = 0;
