@@ -2,7 +2,7 @@
 #include <fstream>
 #include <iostream>
 #include <unordered_map>
-#include "Utils.h"
+#include <sstream>
 
 struct Word
 {
@@ -40,6 +40,9 @@ Word find_word(const std::string line, bool backwards = false)
 	return word;
 }
 
+//Uncomment for part 1
+#define PART_2
+
 void Day_1()
 {
 	std::ifstream file("Input/Day1/Day1.txt");
@@ -51,17 +54,21 @@ void Day_1()
 		{
 			std::string sum;
 			std::size_t first = line.find_first_of("0123456789");
+#ifdef PART_2
 			Word word = find_word(line);
 			if (word.index < first)
 				sum.push_back(word.value + '0');
 			else
+#endif
 				sum.push_back(line[first]);
 			std::reverse(line.begin(), line.end());
 			std::size_t last = line.find_first_of("0123456789");
+#ifdef PART_2
 			word = find_word(line, true);
 			if (word.index < last)
 				sum.push_back(word.value + '0');
 			else
+#endif
 				sum.push_back(line[last]);
 			total_sum += std::stoull(sum);
 		}
